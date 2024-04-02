@@ -3531,6 +3531,8 @@ A részvételtől az adott gyű&shy;lés részének érzem magam, mert azt tehet
 </div>
 <!-- Az alapvető HTML struktúra itt ér véget -->
 
+
+Copy code
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     // Az aktuális dátum lekérdezése
@@ -3543,6 +3545,14 @@ document.addEventListener("DOMContentLoaded", function() {
     if (currentChapter) {
         currentChapter.style.display = "block";
         currentChapter.scrollIntoView();
+    } else {
+        // Ha nincs megfelelő fejezet az aktuális dátumhoz, megpróbálunk egy másik formátumot használni
+        let alternativeId = `${currentDay}-${currentMonth}`;
+        currentChapter = document.getElementById(alternativeId);
+        if (currentChapter) {
+            currentChapter.style.display = "block";
+            currentChapter.scrollIntoView();
+        }
     }
 });
 </script>
