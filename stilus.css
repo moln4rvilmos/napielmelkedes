@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+/* Általános stílusok */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    text-transform: uppercase;
+    color: #0094FF;
+}
+
+.day-paragraph {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+.day-paragraph .date {
+    font-weight: bold;
+    color: rgb(65, 75, 95);
+}
+
+a {
+    color: #0094FF;
+}
+
+/* Világos téma */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: rgb(208, 214, 224);
+    }
+    .day-paragraph {
+        background-color: #fff;
+    }
+    .theme-toggle {
+        background-color: #333;
+    }
+    .circle {
+        background-color: black;
+    }
+}
+
+/* Sötét téma */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+        color: #ccc;
+    }
+    .day-paragraph {
+        background-color: #333;
+        color: #ccc;
+    }
+    .theme-toggle {
+        background-color: #ccc;
+    }
+    .circle {
+        background-color: white;
+    }
+}
