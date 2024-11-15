@@ -21,11 +21,6 @@ h4 {
     max-width: 800px;
 }
 
-.day-paragraph .date {
-    font-weight: bold;
-    color: rgb(45, 95, 95);
-}
-
 a {
     color: #0094FF;
 }
@@ -38,12 +33,11 @@ a {
     .day-paragraph {
         background-color: #fff;
     }
-    .theme-toggle {
-        background-color: #333;
-    }
-    .circle {
-        background-color: black;
-    }
+	.day-paragraph .date {
+    font-weight: bold;
+    color: #000;
+	}
+
 }
 
 /* Sötét téma */
@@ -56,10 +50,8 @@ a {
         background-color: #333;
         color: #ccc;
     }
-    .theme-toggle {
-        background-color: #ccc;
-    }
-    .circle {
-        background-color: white;
-    }
+ 	.day-paragraph .date {
+    font-weight: bold;
+    color: #ccc;
+}
 }
